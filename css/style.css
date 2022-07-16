@@ -277,3 +277,117 @@ H1::after {
     color: #B2B2B2;
     opacity: 1;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact__main {
+    display: flex;
+    width: 904px;
+    margin: 0 0 65px 0;
+}
+
+.contact__img {
+    width: 444px;
+    height: 316.5px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 28px;
+}
+
+#name, #email, #message {
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+    padding: 8px 0 8px 12px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+#name:focus, #email:focus, #message:focus {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+#name, #email {
+    margin: 0 0 28px 0;
+}
+
+#message {
+    margin: 0 0 20px 0;
+    height: 140px;
+    text-align: left;
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+}
+
+.checkbox input {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    font: normal normal 300 10px/14px Open Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+    opacity: 1;
+}
+.checkbox span {
+    height: 22px;
+    width: 22px;
+    flex-shrink: 0;
+    border: 1px solid #D1D1D1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    margin-right: 15px;
+}
+.checkbox input:checked + span {
+    background: url("../images/Icon Check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact__btn {
+    outline: none;
+    text-align: center;
+    font: normal normal bold 14px/19px Nunito Sans;
+    letter-spacing: 0px;
+    color: #FF0000;
+    opacity: 1;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 11px 52px 10px 52px;
+    margin: 31px 0 0 0;
+    flex-grow: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    opacity: 1;
+    align-self: flex-end;
+}
